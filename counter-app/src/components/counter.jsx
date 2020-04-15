@@ -12,18 +12,25 @@ class Counter extends Component {
 
     return (
       <div>
+        <h4>Counter #{this.props.key}</h4>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
-          onClick={() => this.handleIncrement({ id: 1 })}
+          onClick={() => this.handleIncrement()}
           className="btn btn-secondary btn-sm"
         >
           Increment
+        </button>
+        <button
+          onClick={() => this.props.onDelete(this.props.key)}
+          className="btn btn-danger btn-sm m-2"
+        >
+          Delete
         </button>
       </div>
     );
   }
 
-  handleIncrement = (product) => {
+  handleIncrement = () => {
     this.setState({ count: this.state.count + 1 });
   };
 
