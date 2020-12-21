@@ -3,16 +3,16 @@ export TOKEN_EP=https://localhost:9443/oauth2/token
 export AUTHZ_EP=https://localhost:9443/oauth2/authorize
 
 
-export CLIENT_ID=YII152xzM4h9NxJy3lJxSM_J5I0a
+export CLIENT_ID=WLdAffgiNIGSYq1OfZlF8XEiqBoa
 
-export CLIENT_SECRET=9KdZY8mORXG7t3YdEwDnqJoRWlsa
-
-
-export username=admin
-
-export password=admin
+export CLIENT_SECRET=enlKQ9W4LQS5kTuh4aqNiX34O2Ma
 
 
-export SCOPE=test11
+# export username=tppdev1
 
-export REDIRECT_URI=https://curlapp
+# export password=12345
+
+
+export SCOPE=accounts
+
+export REDIRECT_URI=https://tpp
